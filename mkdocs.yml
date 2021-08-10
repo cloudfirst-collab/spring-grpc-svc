@@ -1,0 +1,8 @@
+site_name: "springboot-grpc-svc"
+site_description: "HelloWorld GRPC Service"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
