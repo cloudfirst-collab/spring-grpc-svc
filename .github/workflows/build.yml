@@ -1,5 +1,8 @@
 name: Java CI with Maven
 
+env:
+  name: development
+
 on:
   push:
     branches: [ master ]
