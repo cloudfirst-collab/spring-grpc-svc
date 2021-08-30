@@ -1,12 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "springboot-grpc-svc"
-  description: "HelloWorld GRPC Service"
+  name: springboot-service
+  description: "Sample SpringBoot GRPC Service"
   annotations:
     github.com/project-slug: cloudfirst-collab/spring-grpc-svc
+    backstage.io/techdocs-ref: url:https://spring.io/microservices
+    sonarqube.org/project-key: cloudfirst-collab_spring-grpc-svc
+    #backstage.io/kubernetes-id: <ENTITY_NAME>
+    backstage.io/kubernetes-label-selector: "app=cloudcollab-backend,component=backend"
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
-  lifecycle: experimental
-  owner: "ga"
+  lifecycle: production
+  owner: user:guest
