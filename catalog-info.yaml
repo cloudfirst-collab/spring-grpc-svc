@@ -8,6 +8,8 @@ metadata:
     backstage.io/techdocs-ref: url:https://spring.io/microservices
     sonarqube.org/project-key: cloudfirst-collab_spring-grpc-svc
     #backstage.io/kubernetes-id: <ENTITY_NAME>
+    snyk.io/org-name: cloudfirst-collab
+    snyk.io/project-ids: ad5d6307-4f44-481d-84ed-238d5dcf5669
     backstage.io/kubernetes-label-selector: "app=cloudcollab-backend,component=backend"
     backstage.io/techdocs-ref: dir:.
 spec:
