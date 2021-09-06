@@ -3,6 +3,10 @@ kind: Component
 metadata:
   name: springboot-service
   description: "Sample SpringBoot GRPC Service"
+  links:
+    - url: https://spring.io/projects/spring-boot
+      title: Spring Boot Demo Service
+      icon: dashboard
   annotations:
     github.com/project-slug: cloudfirst-collab/spring-grpc-svc
     backstage.io/techdocs-ref: url:https://spring.io/microservices
