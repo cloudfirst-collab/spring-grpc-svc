@@ -70,7 +70,7 @@ jobs:
         with:
           java-version: 11
       - name: Publish artifact on GitHub Packages
-        run: mvn -B clean deploy -DskipTests
+        run: mvn -B clean deploy -Dmaven.test.skip=true -Dmaven.javadoc.skip=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   docker:
