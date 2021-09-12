@@ -70,7 +70,7 @@ jobs:
         with:
           java-version: 11
       - name: Publish artifact on GitHub Packages
-        run: mvn -B clean deploy -Dmaven.test.skip=true -Dmaven.javadoc.skip=true
+        run: mvn -B deploy -Dmaven.test.skip=true -Dmaven.javadoc.skip=true -Dregistry=https://maven.pkg.github.com/cloudfirst-collab/spring-grpc-svc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   docker:
