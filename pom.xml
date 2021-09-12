@@ -17,7 +17,13 @@
 
     <name>springboot-grpc-svc</name>
     <description>HelloWorld GRPC Service</description>
-
+    <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>cloudfirst-collab</name>
+      <url>https://maven.pkg.github.com/cloudfirst-collab/spring-grpc-svc</url>
+    </repository>
+    </distributionManagement>
     <properties>
         <java.version>11</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
@@ -220,11 +226,4 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>cloudfirst-collab</name>
-      <url>https://maven.pkg.github.com/cloudfirst-collab/spring-grpc-svc</url>
-    </repository>
-    <distributionManagement>
 </project>
