@@ -44,7 +44,7 @@ jobs:
       - name: Maven Package
         run: mvn -B clean package
       - name: Maven Verify
-        run: mvn -B clean verify -DskipTests
+        run: mvn -B clean verify -Dmaven.test.skip=true
   sonar:
     name: Code-Quality Check
     runs-on: ubuntu-latest
