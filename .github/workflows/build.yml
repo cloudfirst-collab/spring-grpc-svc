@@ -17,7 +17,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v1
       with:
-        java-version: 1.8
+        java-version: 11
     - name: Build with Maven
       run: mvn -Dmaven.test.skip=true -Dmaven.javadoc.skip=true -B package --file pom.xml
     - name: Cache SonarCloud packages
@@ -40,7 +40,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 1.8
+          java-version: 11
       - name: Maven Package
         run: mvn -B clean package
       - name: Maven Verify
@@ -53,7 +53,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 1.8
+          java-version: 11
       - name: SonarCloud Scan
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.coverage.jacoco.xmlReportPaths=./site/jacoco/jacoco.xml -Dmaven.test.skip=true -Dmaven.javadoc.skip=true -Dsonar.projectKey=cloudfirst-collab_spring-grpc-svc
         env:
@@ -68,7 +68,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 1.8
+          java-version: 11
       - name: Publish artifact on GitHub Packages
         run: mvn -B clean deploy -DskipTests
         env:
