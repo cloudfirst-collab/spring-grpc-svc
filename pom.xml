@@ -220,4 +220,11 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>cloudfirst-collab</name>
+      <url>https://maven.pkg.github.com/cloudfirst-collab/spring-grpc-svc</url>
+    </repository>
+    <distributionManagement>
 </project>
